@@ -1,0 +1,448 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  #logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    position: relative;
+    right: 30px;
+  }
+  
+  header {
+    background-image: url(https://images.pexels.com/photos/5607876/pexels-photo-5607876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: -300px;
+    height: 45vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header h1 {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 42px;
+  }
+  
+  nav {
+    color: #fff;
+    padding: 5px;
+    position: fixed;
+    display: inline-flex;
+    background-color: #6F9663;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  .menu-dropdown ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 55px;
+  }
+  
+  .menu-dropdown > ul > li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .menu-dropdown > ul > li > a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-dropdown > ul > li:hover > a {
+    background-color: #6F9663;
+  }
+  
+  .menu-dropdown > ul > li > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #6F9663;
+    border: 1px solid #6F9663;
+    padding: 10px;
+  }
+  
+  .menu-dropdown > ul > li:hover ul {
+    display: block;
+  }
+  
+  .menu-dropdown > ul > li > ul > li {
+    display: block;
+  }
+  
+  .menu-dropdown > ul > li > ul > li > a {
+    display: block;
+    padding: 5px 0;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-dropdown > ul > li > ul > li > a:hover {
+    color: black;
+  }
+  
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }
+  
+  section {
+    padding: 60px 20px;
+    text-align: justify;
+    font-size: 17px;
+  }
+  
+  #hrio {
+    text-align: center;
+    line-height: 25px;
+  }
+  
+  footer {
+    background-color: #6F9663;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding-left: 100px;
+  }
+  
+  footer span {
+    font-style: oblique;
+  }
+  
+  footer h3 {
+    padding-bottom: 5px;
+  }
+
+  
+  .album {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+  }
+  
+  .album li {
+    float: left;
+    width: calc(33.33% - 20px); /* Subtraia a margem para ajustar o tamanho corretamente */
+    height: 200px;
+    margin: 10px;
+    border: 4px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px #606060;
+  }
+
+  .album li:hover{
+    transform: scale(2);
+  }
+  
+  /*equitação*/
+  #foto01 {
+    background: url(https://images.pexels.com/photos/17168343/pexels-photo-17168343/free-photo-of-animal-bicho-preto-e-branco-p-b.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto02 {
+    background: url(https://images.pexels.com/photos/13784269/pexels-photo-13784269.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto03 {
+    background: url(https://images.pexels.com/photos/9981018/pexels-photo-9981018.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto04 {
+    background: url(https://images.pexels.com/photos/15883755/pexels-photo-15883755/free-photo-of-animal-bicho-fazenda-sitio.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto05 {
+    background: url(https://images.pexels.com/photos/13106979/pexels-photo-13106979.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto06 {
+    background: url(https://images.pexels.com/photos/9268899/pexels-photo-9268899.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto07 {
+    background: url(https://images.pexels.com/photos/8625117/pexels-photo-8625117.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto08 {
+    background: url(https://images.pexels.com/photos/15670952/pexels-photo-15670952/free-photo-of-fazenda-sitio-chacara-casa-na-fazenda.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto09 {
+    background: url(https://images.pexels.com/photos/2853919/pexels-photo-2853919.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+
+  /*tirolesa*/
+  #foto10 {
+    background: url(https://images.pexels.com/photos/16698501/pexels-photo-16698501/free-photo-of-propaganda-anuncio-publicidade-passaro.jpeg?auto=compress&cs=tinysrgb&w=600) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto11 {
+    background: url(https://images.pexels.com/photos/6156362/pexels-photo-6156362.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }  
+  #foto12 {
+    background: url(https://images.pexels.com/photos/6156358/pexels-photo-6156358.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto13 {
+    background: url(https://images.pexels.com/photos/9223078/pexels-photo-9223078.jpeg?auto=compress&cs=tinysrgb&w=600) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto14 {
+    background: url(https://images.pexels.com/photos/9223081/pexels-photo-9223081.jpeg?auto=compress&cs=tinysrgb&w=600) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto15 {
+    background: url(https://images.pexels.com/photos/9223072/pexels-photo-9223072.jpeg?auto=compress&cs=tinysrgb&w=600) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto16 {
+    background: url(https://images.pexels.com/photos/6454835/pexels-photo-6454835.jpeg?auto=compress&cs=tinysrgb&w=600) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto17 {
+    background: url(https://images.pexels.com/photos/13600236/pexels-photo-13600236.jpeg?auto=compress&cs=tinysrgb&w=600) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto18 {
+    background: url(https://images.pexels.com/photos/12084941/pexels-photo-12084941.jpeg?auto=compress&cs=tinysrgb&w=600) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+
+  /* */
+  #foto19 {
+    background: url(https://alaya.com.br/upload/a9fc38dd070d3392d4f6e4c92cc45180-arvorismo1.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto20 {
+    background: url(https://estacaofloresta.com.br/wp-content/uploads/2017/12/arvorismo-no-brasil.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto21 {
+    background: url(https://apuamarafting.com.br/wp-content/uploads/2017/09/arvorismo03-1700x956.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto22 {
+    background: url(https://www.bonitoway.com.br/public/posts/bw_descubra_como_e_onde_praticar_arvorismo_em_bonito_ms_a.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto23 {
+    background: url(https://www.imparcial.com.br/assets/images/galeria/1567205055.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto24 {
+    background: url(https://parquevilavelha.com.br/wp-content/uploads/2020/10/arvorismo_capa.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto25 {
+    background: url(https://parquevilavelha.com.br/wp-content/uploads/2020/10/arvorismo-47.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto26 {
+    background: url(https://www.panoramadoturismo.com.br/wp-content/uploads/2021/06/avilavelhhax.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto27 {
+    background: url(https://parquevilavelha.com.br/wp-content/uploads/2020/10/arvorismo-66.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+
+  /*cachoeira*/
+  #foto28 {
+    background: url(https://www.guiachapadaveadeiros.com/wp-content/uploads/2019/10/cachoeira-santa-barbara-guia-chapada-veadeiros-cavalcante.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto29 {
+    background: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/08/63/3e/cachoeira-santa-barbara.jpg?w=1200&h=1200&s=1) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto30 {
+    background: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/11/ae/76/tudo-azul.jpg?w=1200&h=1200&s=1) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto31 {
+    background: url(https://classeturista.com/wp-content/uploads/2020/02/Cachoeira-Santa-B%C3%A1rbara-foto-1-scaled-e1599999705717.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto32 {
+    background: url(https://www.tevejopelomundo.com.br/wp-content/uploads/2017/10/cavalcante-santa-barbara.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto33 {
+    background: url(https://partiuviajarblog.com.br/wp-content/uploads/2019/10/IMG_7730.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto34 {
+    background: url(https://desviantes.blob.core.windows.net/desviantes/media/adventures/items/be39ebe7b2d7ae6aeb03829df379984d.JPG) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto35 {
+    background: url(https://static.pacotebarato.com.br/Cachoeira-Santa-Barbara.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  #foto36 {
+    background: url(https://i0.wp.com/jannaguia.com.br/wp-content/uploads/2021/08/IMG_1087-e1630017390427.jpeg?fit=960%2C642&ssl=1) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      height: 25vh;
+    }
+    header h1 {
+      font-size: 30px;
+    }
+    
+    .menu-dropdown ul {
+      position: absolute;
+      top: 42px;
+      left: 0;
+      width: 100%;
+      background-color: #6F9663;
+      display: none;
+    }
+  
+    .menu-dropdown > ul > li {
+      display: block;
+    }
+  
+    .menu-dropdown > ul > li > ul {
+      position: static;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
+  
+    .menu-dropdown > ul > li:hover ul {
+      display: block;
+    }
+    
+    .album li {
+        width: calc(50% - 10px);
+        height: 110px;
+        margin: 5px;
+        display: flex;
+    }
+      
+    section {
+      padding: 30px;
+      font-size: 15px;
+    }
+  
+    footer {
+      padding-left: 20px;
+      font-size: 14px;
+    }
+  }
+  
